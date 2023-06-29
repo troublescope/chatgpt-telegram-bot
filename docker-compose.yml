@@ -11,6 +11,11 @@ services:
         volumes:
             - ./config.yml:/code/config.yml
             - data:/code/data
+        deploy:
+            resources:
+                limits:
+                    cpus: '0.1'
+                    memory: 250M
 
 volumes:
     data:
