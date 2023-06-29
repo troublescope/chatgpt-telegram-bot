@@ -21,7 +21,7 @@ class Model:
         resp = await openai.Completion.acreate(
             model="text-davinci-003",
             prompt=prompt,
-            temperature=0.7,
+            temperature=0.1,
             max_tokens=1000,
             top_p=1,
             frequency_penalty=0,
